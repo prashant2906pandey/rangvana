@@ -383,3 +383,23 @@ header{
 .class-card p{
     line-height:1.6;
 }
+.classes{
+    padding:80px 8%;
+    background:white;
+    text-align:center;
+}
+
+.class-cards{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.class-card{
+    width:300px;
+    padding:35px 25px;
+    background:#faf7f2;
+    border-radius:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
