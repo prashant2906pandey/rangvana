@@ -284,3 +284,39 @@ header{
     }
 
 }
+/* Gallery Fix */
+
+.gallery{
+    padding:80px 8%;
+    background:#faf7f2;
+    text-align:center;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:25px;
+}
+
+.gallery-item{
+    width:100%;
+    height:300px;
+    overflow:hidden;
+    border-radius:20px;
+}
+
+.gallery-item img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+    display:block;
+}
+
+
+@media(max-width:768px){
+
+    .gallery-grid{
+        grid-template-columns:1fr;
+    }
+
+}
