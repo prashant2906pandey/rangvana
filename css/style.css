@@ -160,3 +160,47 @@ header{
     }
 
 }
+/* About Section */
+
+.about{
+    padding:80px 8%;
+    background:white;
+    text-align:center;
+}
+
+
+.about h2{
+    font-size:42px;
+    margin-bottom:20px;
+}
+
+
+.about-content p{
+    max-width:800px;
+    margin:15px auto;
+    font-size:18px;
+    line-height:1.7;
+}
+
+
+.skills{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    margin-top:50px;
+    flex-wrap:wrap;
+}
+
+
+.skill-card{
+    width:280px;
+    padding:30px;
+    border-radius:20px;
+    background:#faf7f2;
+    box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+
+.skill-card h3{
+    margin:15px 0;
+}
