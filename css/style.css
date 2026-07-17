@@ -496,3 +496,8 @@ header{
     padding-top:20px;
     color:#bbb;
 }
+footer img{
+    width:70px !important;
+    height:70px !important;
+    object-fit:contain;
+}
