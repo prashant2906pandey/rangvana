@@ -164,17 +164,23 @@ header{
     border-radius:30px;
     text-decoration:none;
     margin-right:15px;
+    transition:all .3s ease;
 }
+
 .btn:hover{
     transform:translateY(-3px);
     box-shadow:0 12px 25px rgba(124,58,237,.3);
 }
 
-
 .outline{
     background:transparent;
     color:#8b5cf6;
     border:2px solid #8b5cf6;
+}
+
+.outline:hover{
+    background:#8b5cf6;
+    color:#fff;
 }
 
 
