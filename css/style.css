@@ -623,3 +623,40 @@ footer img{
         font-size:42px;
     }
 }
+@media (max-width:768px){
+
+    .navbar{
+        position:relative;
+    }
+
+    .nav-links{
+        display:none;
+        position:absolute;
+        top:100%;
+        left:0;
+        width:100%;
+        background:#fff;
+        flex-direction:column;
+        text-align:center;
+        padding:20px 0;
+        box-shadow:0 10px 25px rgba(0,0,0,.1);
+    }
+
+    .nav-links.active{
+        display:flex;
+    }
+
+    .nav-links li{
+        margin:15px 0;
+    }
+
+    .menu-btn{
+        display:block;
+        cursor:pointer;
+        font-size:28px;
+    }
+
+    .nav-btn{
+        display:none;
+    }
+}
