@@ -26,7 +26,7 @@
         </div>
 
         <ul class="nav-links">
-            <li><a href="#">Home</a></li>
+            <li><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#gallery">Gallery</a></li>
             <li><a href="#classes">Classes</a></li>
@@ -35,14 +35,18 @@
 
         <a href="#contact" class="nav-btn">Enquire Now</a>
 
-        <button class="menu-btn">☰</button>
+        <button class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
 
     </nav>
 </header>
 
 
 <!-- Hero Section -->
-<section class="hero">
+<section class="hero" id="home">
 
     <div class="hero-content" data-aos="fade-right">
 
@@ -239,6 +243,66 @@
     <div style="margin-top:50px;">
         <a href="#contact" class="btn">Book a Free Demo Class</a>
     </div>
+<!-- Booking Form -->
+
+<div class="booking-form" data-aos="fade-up">
+
+    <h2>Book Your Art Class 🎨</h2>
+
+    <form id="classForm">
+
+        <input 
+        type="text" 
+        id="name" 
+        placeholder="Your Name"
+        required>
+
+
+        <input 
+        type="email" 
+        id="email" 
+        placeholder="Your Email"
+        required>
+
+
+        <input 
+        type="tel" 
+        id="phone" 
+        placeholder="Phone Number"
+        required>
+
+
+        <select id="classType" required>
+
+            <option value="">
+                Select Class
+            </option>
+
+            <option>
+                Beginner Art Class
+            </option>
+
+            <option>
+                Advanced Painting
+            </option>
+
+            <option>
+                Custom Workshop
+            </option>
+
+        </select>
+
+
+        <button type="submit">
+            Book Now 🎨
+        </button>
+
+    </form>
+
+
+    <p id="successMsg"></p>
+
+</div>
 
 </section>
 <!-- Contact Section -->
