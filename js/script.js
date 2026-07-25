@@ -83,3 +83,45 @@ prev.addEventListener("click",(e)=>{
     showImage();
 
 });
+
+// Keyboard Controls
+
+document.addEventListener("keydown",(e)=>{
+
+    if(!lightbox.classList.contains("active")) return;
+
+    if(e.key==="ArrowRight"){
+
+        currentImage++;
+
+        if(currentImage>=galleryImages.length){
+            currentImage=0;
+        }
+
+        showImage();
+
+    }
+
+    if(e.key==="ArrowLeft"){
+
+        currentImage--;
+
+        if(currentImage<0){
+            currentImage=galleryImages.length-1;
+        }
+
+        showImage();
+
+    }
+
+    if(e.key==="Escape"){
+
+        lightbox.classList.remove("active");
+
+    }
+
+});
+AOS.init({
+    duration:1000,
+    once:true
+});
